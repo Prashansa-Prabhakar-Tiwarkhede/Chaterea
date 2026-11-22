@@ -1,4 +1,3 @@
-=======
 # Chat App — Real-Time E2EE Messenger
 
 Spring Boot (Java 17) backend + React frontend, Supabase Postgres, STOMP/WebSocket
