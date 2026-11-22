@@ -1,0 +1,138 @@
+1. JWT Authentication
+        Every API request carries a JWT.
+
+        User
+        ↓
+        Login
+        ↓
+        JWT Generated
+        ↓
+        JWT stored
+        ↓
+        Every request authenticated
+2. Password Hashing
+
+        Passwords are never stored in plain text.
+
+        password
+
+        ↓
+
+        BCrypt
+
+        ↓
+
+        $2a$10$Lsk2...
+3. End-to-End Encryption (Core Feature)
+
+        Instead of sending plain text:
+
+        Hello
+
+        Send:
+
+        P8k29Asd872KJH...
+
+        Only the intended recipient can decrypt it.
+
+4. RSA Key Pair
+
+        Each user gets:
+
+        Public Key
+
+        Private Key
+
+        Public keys are shared.
+
+        Private keys remain secret.
+
+        AES session keys are encrypted using RSA before being exchanged.
+
+5. AES Encryption
+
+        Actual chat messages are encrypted using AES-256 because it's much faster than RSA for large amounts of data.
+
+        Message
+
+        ↓
+
+        AES
+
+        ↓
+
+        Ciphertext
+
+6. Digital Signature
+
+        Each message is signed.
+
+        Receiver verifies:
+
+        ✔ Message wasn't modified.
+
+        ✔ Sender is authentic.
+
+7. HTTPS
+
+        All communication:
+
+        React
+
+        ↓
+
+        HTTPS
+
+        ↓
+
+        Spring Boot
+        
+8. Role-Based Access
+
+        Roles:
+
+        USER
+
+        ADMIN
+
+        MODERATOR
+
+        Admins can:
+
+        Delete abusive messages
+        Ban users
+        View reports
+
+9. Account Lock
+
+        If:
+
+        5 wrong passwords
+
+        ↓
+
+        Lock Account
+
+        ↓
+
+        Email OTP
+
+10. Audit Logs
+
+        Every action:
+
+        Login
+
+        Logout
+
+        Password Change
+
+        Delete Chat
+
+        Block User
+
+        Admin Actions
+
+        is stored.
+
+        

@@ -1,0 +1,12 @@
+target/
+*.class
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+.idea/
+*.iml
+.env
+*.log
+HELP.md
+
+# Local media storage (dev-only)
+uploaded-media/

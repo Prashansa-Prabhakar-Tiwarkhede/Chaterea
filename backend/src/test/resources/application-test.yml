@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:chatapp;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  flyway:
+    enabled: false
+  mail:
+    host: localhost
+    port: 3025
+    username: test
+    password: test
+
+app:
+  jwt:
+    secret: dGVzdC1zZWNyZXQta2V5LWZvci1qdW5pdC10ZXN0cy1vbmx5LW5vdC1mb3ItcHJvZC0xMjM0NTY=
+    access-token-expiration-ms: 900000
+    refresh-token-expiration-ms: 1209600000
+    issuer: chatapp-test
+  security:
+    max-failed-login-attempts: 5
+    account-lock-otp-expiration-minutes: 15
+    password-reset-token-expiration-minutes: 30
+    email-verification-token-expiration-hours: 24
+  cors:
+    allowed-origins: http://localhost:5173
+  mail:
+    from: test@chatapp.example.com

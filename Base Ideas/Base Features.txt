@@ -1,0 +1,40 @@
+Main Modules
+
+1. Authentication
+        Register
+        Login
+        JWT
+        Refresh Token
+        Forgot Password
+        Email Verification
+        Logout
+2. User Profile
+        Profile Picture
+        Status
+        Bio
+        Last Seen
+        Online Status
+3. Friends
+        Search User
+        Send Request
+        Accept
+        Reject
+        Block User
+4. Chat
+        One-to-One Chat
+        Group Chat
+        Typing Indicator
+        Seen Status
+        Read Receipts
+        Delete Message
+        Edit Message
+5. Media Sharing
+        Images
+        Videos
+        PDF
+        Documents
+        Audio
+6. Notifications
+        New Message
+        Friend Request
+        Group Invitation
