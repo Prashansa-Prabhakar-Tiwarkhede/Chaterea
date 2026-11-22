@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 =======
 # Chat App — Real-Time E2EE Messenger
 
